@@ -1,0 +1,15 @@
+Install pip : 
+
+sudo apt-get install python-pip python-dev build-essential 
+$ sudo pip install --upgrade pip 
+$ sudo pip install --upgrade virtualenv 
+
+install the following modules:
+
+sudo pip install termcolor
+sudo pip install configparser
+sudo pip install scapy
+sudo pip install konsole
+sudo pip install pygeoip
+sudo pip install dpkt
+sudo pip install ipaddr
