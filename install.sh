@@ -7,7 +7,7 @@ pip install --upgrade virtualenv
 pip install termcolor
 pip install configparser
 pip install scapy
-pip install konsole
+apt-get install konsole
 pip install pygeoip
 pip install dpkt
 pip install ipaddr
