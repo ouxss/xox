@@ -267,18 +267,18 @@ def checkscriptloaded():
 
 def runscript():
 	
-	run=''
-        run+='python'
-        run+='../MyPythonscripts/'+script+Catsub[Cat]
+	#run=''
+        #run+='python'
+        #run+='../MyPythonscripts/'+script+Catsub[Cat]
 	
 	
 	args=['konsole','--noclose','-e','python','../MyPythonscripts/'+script+Catsub[Cat]]
 
         for el in  options.keys():
         	if options[el] != '0':
-                	run+=' '+parsearg[el]+' '+options[el]
-                        run = run.strip()
-                        run =run.replace('\n','')
+                	#run+=' '+parsearg[el]+' '+options[el]
+                        #run = run.strip()
+                        #run =run.replace('\n','')
 		        args.append(parsearg[el])
 			args.append(options[el])	
         try:
@@ -288,7 +288,8 @@ def runscript():
 		#args=args1+args
 		
 		p = subprocess.Popen(args, stdout=subprocess.PIPE,stderr=subprocess.PIPE)
-          	out, err = p.communicate()
+          	t = threading.Thread(target=p.communicate)
+		#p.communicate()
 		
         except:
               pass
