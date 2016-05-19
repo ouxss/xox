@@ -47,7 +47,7 @@ for el in optionlist:
 
 def welcome():
 	os.system('clear')
-	print colored('[+]','white'), colored('Welcome to xOx ','blue')
+	print colored('[+]','white'), colored('Welcome to xOxScripts ','blue')
 	print colored("    Version :","blue"),colored(version,'red')
 	print ''
 
