@@ -12,7 +12,7 @@ import loadscripts
 import xOxhelp
 import traceback
 #configuration file
-
+#shassen
 config = configparser.ConfigParser()
 confFile = os.getcwd() + '/conf.ini'
 reader = config.read(confFile)
